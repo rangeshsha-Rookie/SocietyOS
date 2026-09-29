@@ -3,6 +3,7 @@
     "name": "SocietyOS",
     "slug": "societyos",
     "version": "1.0.0",
+    "description": "Intelligent society complaint and institutional-memory mobile platform",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
     "scheme": "societyos",

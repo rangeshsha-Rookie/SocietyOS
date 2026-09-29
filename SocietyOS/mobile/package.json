@@ -1,6 +1,15 @@
 {
   "name": "societyos-mobile",
   "version": "1.0.0",
+  "description": "SocietyOS mobile app for intelligent society complaint filing and AI-assisted triage",
+  "keywords": [
+    "societyos",
+    "react-native",
+    "expo",
+    "complaint-management",
+    "ai-triage",
+    "civic-tech"
+  ],
   "main": "expo-router/entry",
   "scripts": {
     "start": "expo start",

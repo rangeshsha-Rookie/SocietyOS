@@ -3,6 +3,7 @@
 
 [![GitHub Repository](https://img.shields.io/badge/GitHub-rangeshsha--Rookie%2FSocietyOS-181717?style=for-the-badge&logo=github)](https://github.com/rangeshsha-Rookie/SocietyOS)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
+[![Version](https://img.shields.io/badge/Version-1.0.0-4CAF50?style=for-the-badge)](#)
 [![React Native](https://img.shields.io/badge/React_Native-Expo_SDK_51-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactnative.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-20+-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
