@@ -1,0 +1,47 @@
+name: SocietyOS CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  backend-check:
+    name: Backend Typecheck & Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: SocietyOS/backend/package.json
+      - name: Install Dependencies
+        working-directory: SocietyOS/backend
+        run: npm install
+      - name: Generate Prisma Client
+        working-directory: SocietyOS/backend
+        run: npx prisma generate
+      - name: TypeScript Check
+        working-directory: SocietyOS/backend
+        run: npx tsc --noEmit
+
+  mobile-check:
+    name: Mobile Typecheck
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: SocietyOS/mobile/package.json
+      - name: Install Dependencies
+        working-directory: SocietyOS/mobile
+        run: npm install
+      - name: TypeScript Check
+        working-directory: SocietyOS/mobile
+        run: npx tsc --noEmit
