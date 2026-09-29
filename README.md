@@ -84,7 +84,18 @@ flowchart TD
 
 ---
 
-## 📱 Mobile App Screens
+## 📱 Mobile App Screens & UI Showcase
+
+<p align="center">
+  <img src="docs/screenshots/01_home_dashboard.jpg" width="31%" alt="Resident Home Dashboard" />
+  &nbsp;
+  <img src="docs/screenshots/02_raise_complaint.jpg" width="31%" alt="Raise Complaint Screen" />
+  &nbsp;
+  <img src="docs/screenshots/03_ai_problem_dossier.jpg" width="31%" alt="AI Problem Context Dossier" />
+</p>
+<p align="center">
+  <em>(Left) Resident Dashboard & Live Metrics &nbsp;•&nbsp; (Center) Multilingual Complaint Filing &nbsp;•&nbsp; (Right) Signature AI Problem Dossier</em>
+</p>
 
 | Screen | File Path | Description |
 | :--- | :--- | :--- |
