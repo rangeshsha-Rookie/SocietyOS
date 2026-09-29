@@ -1,0 +1,12 @@
+{
+  "name": "societyos",
+  "version": "1.0.0",
+  "description": "SocietyOS - Intelligent Society Complaint and Operational-Memory Application",
+  "scripts": {
+    "backend:dev": "cd SocietyOS/backend && npm run dev",
+    "backend:seed": "cd SocietyOS/backend && npm run prisma:seed",
+    "mobile:start": "cd SocietyOS/mobile && npm run start",
+    "mobile:android": "cd SocietyOS/mobile && npm run android"
+  },
+  "keywords": ["societyos", "civic-tech", "react-native", "expo", "prisma", "operational-memory"]
+}

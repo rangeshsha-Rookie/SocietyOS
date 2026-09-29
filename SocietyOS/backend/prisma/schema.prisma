@@ -1,0 +1,85 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Resident {
+  id         String      @id @default(uuid())
+  name       String
+  flatNumber String
+  wing       String
+  phone      String
+  createdAt  DateTime    @default(now())
+  complaints Complaint[]
+}
+
+model Vendor {
+  id          String      @id @default(uuid())
+  name        String
+  serviceType String
+  assets      Asset[]
+  complaints  Complaint[]
+}
+
+model Asset {
+  id         String      @id @default(uuid())
+  name       String
+  type       String
+  location   String
+  vendorId   String?
+  vendor     Vendor?     @relation(fields: [vendorId], references: [id])
+  complaints Complaint[]
+}
+
+model Incident {
+  id             String       @id @default(uuid())
+  title          String
+  category       String
+  location       String
+  status         String
+  firstReportedAt DateTime
+  lastReportedAt  DateTime
+  complaintCount Int          @default(0)
+  reopenCount    Int          @default(0)
+  complaints     Complaint[]
+  resolutions    Resolution[]
+}
+
+model Complaint {
+  id          String       @id @default(uuid())
+  residentId  String
+  resident    Resident     @relation(fields: [residentId], references: [id])
+  description String
+  category    String
+  urgency     String
+  wing        String
+  flatNumber  String
+  status      String       @default("ACTIVE")
+  incidentId  String?
+  incident    Incident?    @relation(fields: [incidentId], references: [id])
+  assetId     String?
+  asset       Asset?       @relation(fields: [assetId], references: [id])
+  vendorId    String?
+  vendor      Vendor?      @relation(fields: [vendorId], references: [id])
+  createdAt   DateTime     @default(now())
+  resolvedAt  DateTime?
+  verifiedAt  DateTime?
+  resolutions Resolution[]
+}
+
+model Resolution {
+  id               String     @id @default(uuid())
+  complaintId      String?
+  complaint        Complaint? @relation(fields: [complaintId], references: [id])
+  incidentId       String?
+  incident         Incident?  @relation(fields: [incidentId], references: [id])
+  actionTaken      String
+  outcome          String
+  recurrenceDays   Int?
+  residentVerified Boolean    @default(false)
+  resolvedAt       DateTime   @default(now())
+}

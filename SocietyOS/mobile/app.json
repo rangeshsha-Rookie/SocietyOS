@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "SocietyOS",
+    "slug": "societyos",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "societyos",
+    "web": {
+      "bundler": "metro",
+      "output": "single"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.societyos.app"
+    },
+    "plugins": [
+      "expo-router"
+    ]
+  }
+}
