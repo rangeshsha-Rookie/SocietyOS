@@ -27,6 +27,7 @@ web-build/
 logs
 *.log
 *.tmp
+push_to_github.bat
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
