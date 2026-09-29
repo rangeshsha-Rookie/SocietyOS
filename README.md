@@ -10,6 +10,10 @@
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](CONTRIBUTING.md)
 
+<p align="center">
+  <img src="docs/screenshots/00_societyos_showcase_banner.jpg" width="100%" alt="SocietyOS Presentation Showcase Banner" />
+</p>
+
 ---
 
 ## 📌 Executive Summary
@@ -87,14 +91,16 @@ flowchart TD
 ## 📱 Mobile App Screens & UI Showcase
 
 <p align="center">
-  <img src="docs/screenshots/01_home_dashboard.jpg" width="31%" alt="Resident Home Dashboard" />
+  <img src="docs/screenshots/01_home_dashboard.jpg" width="23%" alt="Resident Home Dashboard" />
   &nbsp;
-  <img src="docs/screenshots/02_raise_complaint.jpg" width="31%" alt="Raise Complaint Screen" />
+  <img src="docs/screenshots/02_raise_complaint.jpg" width="23%" alt="Raise Complaint Screen" />
   &nbsp;
-  <img src="docs/screenshots/03_ai_problem_dossier.jpg" width="31%" alt="AI Problem Context Dossier" />
+  <img src="docs/screenshots/03_ai_processing.jpg" width="23%" alt="AI Processing & Search" />
+  &nbsp;
+  <img src="docs/screenshots/04_ai_problem_dossier.jpg" width="23%" alt="AI Problem Context Dossier" />
 </p>
 <p align="center">
-  <em>(Left) Resident Dashboard & Live Metrics &nbsp;•&nbsp; (Center) Multilingual Complaint Filing &nbsp;•&nbsp; (Right) Signature AI Problem Dossier</em>
+  <em>(1) Resident Dashboard &nbsp;•&nbsp; (2) Complaint Ingestion &nbsp;•&nbsp; (3) AI Historical Cross-Reference &nbsp;•&nbsp; (4) Signature AI Problem Dossier</em>
 </p>
 
 | Screen | File Path | Description |
